@@ -1,0 +1,112 @@
+@import "tailwindcss";
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  --color-brand-navy: #0A1A44;
+  --color-on-brand-navy: #FFFFFF;
+  --color-sos-red: #D32F2F;
+  --color-on-sos-red: #FFFFFF;
+  --color-sos-container: #FEE2E2;
+  --color-on-sos-container: #991B1B;
+  --color-success: #15803D;
+  --color-on-success: #FFFFFF;
+  --color-success-container: #DCFCE7;
+  --color-on-success-container: #14532D;
+  --color-warning: #C2410C;
+  --color-on-warning: #FFFFFF;
+  --color-warning-container: #FFEDD5;
+  --color-on-warning-container: #7C2D12;
+  --color-info: #0369A1;
+  --color-on-info: #FFFFFF;
+  --color-info-container: #E0F2FE;
+  --color-on-info-container: #0C4A6E;
+
+  --color-light-primary: #00308C;
+  --color-light-on-primary: #FFFFFF;
+  --color-light-primary-container: #1045B8;
+  --color-light-on-primary-container: #FFFFFF;
+  --color-light-secondary: #505D89;
+  --color-light-on-secondary: #FFFFFF;
+  --color-light-secondary-container: #DBE1FF;
+  --color-light-on-secondary-container: #00164D;
+  --color-light-tertiary: #691F00;
+  --color-light-on-tertiary: #FFFFFF;
+  --color-light-tertiary-container: #902E00;
+  --color-light-on-tertiary-container: #FFFFFF;
+  --color-light-error: #BA1A1A;
+  --color-light-on-error: #FFFFFF;
+  --color-light-error-container: #FFDAD6;
+  --color-light-on-error-container: #93000A;
+  --color-light-background: #FAF8FF;
+  --color-light-on-background: #1A1B22;
+  --color-light-surface: #FAF8FF;
+  --color-light-surface-dim: #D9D9E3;
+  --color-light-surface-bright: #FAF8FF;
+  --color-light-surface-container-lowest: #FFFFFF;
+  --color-light-surface-container-low: #F3F3FD;
+  --color-light-surface-container: #EDEDF7;
+  --color-light-surface-container-high: #E8E7F1;
+  --color-light-surface-container-highest: #E2E1EC;
+  --color-light-on-surface: #1A1B22;
+  --color-light-surface-variant: #E0E1F2;
+  --color-light-on-surface-variant: #434653;
+  --color-light-outline: #747685;
+  --color-light-outline-variant: #C4C5D6;
+  --color-light-inverse-surface: #2F3038;
+  --color-light-inverse-on-surface: #F0F0FA;
+  --color-light-inverse-primary: #B5C4FF;
+
+  --color-dark-primary: #B5C4FF;
+  --color-dark-on-primary: #00297B;
+  --color-dark-primary-container: #1045B8;
+  --color-dark-on-primary-container: #FFFFFF;
+  --color-dark-secondary: #B8C5F7;
+  --color-dark-on-secondary: #212E58;
+  --color-dark-secondary-container: #384570;
+  --color-dark-on-secondary-container: #DBE1FF;
+  --color-dark-background: #11131A;
+  --color-dark-on-background: #E2E1EC;
+  --color-dark-surface: #11131A;
+  --color-dark-surface-container-lowest: #0C0E15;
+  --color-dark-surface-container-low: #1A1B22;
+  --color-dark-surface-container: #1E1F26;
+  --color-dark-surface-container-high: #282A31;
+  --color-dark-surface-container-highest: #33343C;
+  --color-dark-on-surface: #E2E1EC;
+  --color-dark-surface-variant: #434653;
+  --color-dark-on-surface-variant: #C4C5D6;
+  --color-dark-outline: #8E909F;
+  --color-dark-outline-variant: #434653;
+
+  --font-display: "Red Hat Text", sans-serif;
+  --font-headline: "Red Hat Text", sans-serif;
+  --font-title: "Red Hat Text", sans-serif;
+  --font-body: "Instrument Sans", sans-serif;
+  --font-label: "Instrument Sans", sans-serif;
+  --font-mono: "Red Hat Mono", monospace;
+}
+
+.material-symbols-outlined {
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  line-height: 1 !important;
+  box-sizing: content-box;
+  overflow: hidden;
+  white-space: nowrap;
+  direction: ltr;
+  vertical-align: middle;
+  font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+}
+
+.material-symbols-filled {
+  font-variation-settings: 'FILL' 1, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}

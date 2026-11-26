@@ -1,0 +1,243 @@
+<!DOCTYPE html><html lang="fr"><head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>8. Postes de police — PNC Alerte</title>
+  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  <script id="tailwind-config" data-stitch-original-src="522ebf05674950de===../../tailwind.config.js">/** @type {import('tailwindcss').Config} */
+globalThis.tailwind = globalThis.tailwind || {};
+globalThis.tailwind.config = {
+  darkMode: 'class',
+  theme: {
+    extend: {
+      colors: {
+        'brand-navy': '#0A1A44',
+        'on-brand-navy': '#FFFFFF',
+        'sos-red': '#D32F2F',
+        'on-sos-red': '#FFFFFF',
+        'sos-container': '#FEE2E2',
+        'on-sos-container': '#991B1B',
+        'success': '#15803D',
+        'on-success': '#FFFFFF',
+        'success-container': '#DCFCE7',
+        'on-success-container': '#14532D',
+        'warning': '#C2410C',
+        'on-warning': '#FFFFFF',
+        'warning-container': '#FFEDD5',
+        'on-warning-container': '#7C2D12',
+        'info': '#0369A1',
+        'on-info': '#FFFFFF',
+        'info-container': '#E0F2FE',
+        'on-info-container': '#0C4A6E',
+        'light-primary': '#00308C',
+        'light-on-primary': '#FFFFFF',
+        'light-primary-container': '#1045B8',
+        'light-on-primary-container': '#FFFFFF',
+        'light-secondary': '#505D89',
+        'light-on-secondary': '#FFFFFF',
+        'light-secondary-container': '#DBE1FF',
+        'light-on-secondary-container': '#00164D',
+        'light-tertiary': '#691F00',
+        'light-on-tertiary': '#FFFFFF',
+        'light-tertiary-container': '#902E00',
+        'light-on-tertiary-container': '#FFFFFF',
+        'light-error': '#BA1A1A',
+        'light-on-error': '#FFFFFF',
+        'light-error-container': '#FFDAD6',
+        'light-on-error-container': '#93000A',
+        'light-background': '#FAF8FF',
+        'light-on-background': '#1A1B22',
+        'light-surface': '#FAF8FF',
+        'light-surface-dim': '#D9D9E3',
+        'light-surface-bright': '#FAF8FF',
+        'light-surface-container-lowest': '#FFFFFF',
+        'light-surface-container-low': '#F3F3FD',
+        'light-surface-container': '#EDEDF7',
+        'light-surface-container-high': '#E8E7F1',
+        'light-surface-container-highest': '#E2E1EC',
+        'light-on-surface': '#1A1B22',
+        'light-surface-variant': '#E0E1F2',
+        'light-on-surface-variant': '#434653',
+        'light-outline': '#747685',
+        'light-outline-variant': '#C4C5D6',
+        'light-inverse-surface': '#2F3038',
+        'light-inverse-on-surface': '#F0F0FA',
+        'light-inverse-primary': '#B5C4FF',
+        'dark-primary': '#B5C4FF',
+        'dark-on-primary': '#00297B',
+        'dark-primary-container': '#1045B8',
+        'dark-on-primary-container': '#FFFFFF',
+        'dark-secondary': '#B8C5F7',
+        'dark-on-secondary': '#212E58',
+        'dark-secondary-container': '#384570',
+        'dark-on-secondary-container': '#DBE1FF',
+        'dark-tertiary': '#FFB59B',
+        'dark-on-tertiary': '#5B1A00',
+        'dark-tertiary-container': '#902E00',
+        'dark-on-tertiary-container': '#FFDBCF',
+        'dark-error': '#FFB4AB',
+        'dark-on-error': '#690005',
+        'dark-error-container': '#93000A',
+        'dark-on-error-container': '#FFDAD6',
+        'dark-background': '#11131A',
+        'dark-on-background': '#E2E1EC',
+        'dark-surface': '#11131A',
+        'dark-surface-dim': '#11131A',
+        'dark-surface-bright': '#373941',
+        'dark-surface-container-lowest': '#0C0E15',
+        'dark-surface-container-low': '#1A1B22',
+        'dark-surface-container': '#1E1F26',
+        'dark-surface-container-high': '#282A31',
+        'dark-surface-container-highest': '#33343C',
+        'dark-on-surface': '#E2E1EC',
+        'dark-surface-variant': '#434653',
+        'dark-on-surface-variant': '#C4C5D6',
+        'dark-outline': '#8E909F',
+        'dark-outline-variant': '#434653',
+        'dark-inverse-surface': '#E2E1EC',
+        'dark-inverse-on-surface': '#2F3038',
+        'dark-inverse-primary': '#2A56C8',
+      },
+      borderRadius: {
+        'sm': '6px',
+        'DEFAULT': '10px',
+        'md': '12px',
+        'lg': '16px',
+        'xl': '20px',
+        'full': '9999px',
+      },
+      spacing: {
+        'gutter-xs': '4px',
+        'gutter-sm': '8px',
+        'gutter-md': '12px',
+        'gutter-lg': '16px',
+        'gutter-xl': '24px',
+        'section': '32px',
+        'page-margin': '16px',
+      },
+      fontFamily: {
+        'display': ['"Red Hat Text"', 'sans-serif'],
+        'headline': ['"Red Hat Text"', 'sans-serif'],
+        'title': ['"Red Hat Text"', 'sans-serif'],
+        'body': ['"Instrument Sans"', 'sans-serif'],
+        'label': ['"Instrument Sans"', 'sans-serif'],
+        'mono': ['"Red Hat Mono"', 'monospace'],
+      },
+      fontSize: {
+        'display-lg': ['36px', { lineHeight: '44px', letterSpacing: '-0.5px', fontWeight: '700' }],
+        'display-lg-mobile': ['28px', { lineHeight: '34px', letterSpacing: '-0.25px', fontWeight: '700' }],
+        'headline-lg': ['24px', { lineHeight: '30px', letterSpacing: '-0.2px', fontWeight: '700' }],
+        'headline-md': ['20px', { lineHeight: '26px', letterSpacing: '-0.1px', fontWeight: '700' }],
+        'title-md': ['16px', { lineHeight: '22px', letterSpacing: '0px', fontWeight: '600' }],
+        'title-sm': ['14px', { lineHeight: '20px', letterSpacing: '0px', fontWeight: '600' }],
+        'body-lg': ['16px', { lineHeight: '24px', letterSpacing: '0px', fontWeight: '400' }],
+        'body-md': ['14px', { lineHeight: '20px', letterSpacing: '0px', fontWeight: '400' }],
+        'body-sm': ['12px', { lineHeight: '16px', letterSpacing: '0.1px', fontWeight: '400' }],
+        'label-lg': ['15px', { lineHeight: '20px', letterSpacing: '0.1px', fontWeight: '600' }],
+        'label-md': ['12px', { lineHeight: '16px', letterSpacing: '0.2px', fontWeight: '600' }],
+        'label-sm': ['11px', { lineHeight: '14px', letterSpacing: '0.2px', fontWeight: '600' }],
+        'mono-md': ['13px', { lineHeight: '18px', letterSpacing: '0.3px', fontWeight: '600' }],
+      },
+      transitionDuration: {
+        'state-change': '120ms',
+        'surface-enter': '220ms',
+        'surface-exit': '150ms',
+      },
+      transitionDelay: {
+        'state-change': '0ms',
+        'surface-enter': '0ms',
+        'surface-exit': '0ms',
+      },
+      transitionTimingFunction: {
+        'state-change': 'ease-out',
+        'surface-enter': 'cubic-bezier(0.2, 0, 0, 1)',
+        'surface-exit': 'cubic-bezier(0.3, 0, 1, 1)',
+      },
+    },
+  },
+};
+if (typeof module !== 'undefined') module.exports = globalThis.tailwind.config;
+</script>
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;500;600;700&amp;family=Red+Hat+Mono:wght@500;600&amp;family=Red+Hat+Text:wght@500;600;700&amp;display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=block" rel="stylesheet">
+  <style>.material-symbols-outlined { display: inline-block; width: 1em; height: 1em; line-height: 1 !important; box-sizing: content-box; overflow: hidden; white-space: nowrap; direction: ltr; vertical-align: middle; }</style>
+</head>
+<body class="bg-light-surface text-light-on-surface font-body antialiased">
+  <div class="min-h-screen w-full max-w-[390px] mx-auto bg-light-surface-container-low flex flex-col justify-between">
+    <div>
+      <header class="bg-light-surface-container-lowest px-page-margin pt-5 pb-3 border-b border-light-outline-variant flex flex-col gap-3">
+        <div class="flex items-center gap-3">
+          <button data-component-id="button-icon" data-component-type="button" data-component-variant="icon" type="button" aria-label="Retour" onclick="window.location.href=&#39;../05-tableau-de-bord/TableauDeBord.html&#39;" class="w-9 h-9 rounded-full flex items-center justify-center text-light-on-surface hover:bg-light-surface-container-low">
+            <span class="material-symbols-outlined text-[20px]" aria-hidden="true">arrow_back_ios_new</span>
+          </button>
+          <h1 data-design-text-token="headline-md" class="font-headline text-headline-md text-light-on-surface">Postes de police</h1>
+        </div>
+
+        <label class="relative flex items-center">
+          <span aria-hidden="true" class="material-symbols-outlined text-[20px] text-light-on-surface-variant absolute left-3">search</span>
+          <input type="search" placeholder="Rechercher un poste" class="w-full min-h-10 pl-10 pr-3.5 py-2 rounded-md bg-light-surface-container-low border border-light-outline-variant text-body-md text-light-on-surface placeholder:text-light-on-surface-variant focus:border-light-primary focus:ring-1 focus:ring-light-primary">
+        </label>
+
+        <div class="grid grid-cols-3 gap-2" role="tablist" aria-label="Filtrer les postes">
+          <button type="button" role="tab" aria-selected="true" class="py-1.5 rounded-full bg-light-primary-container text-light-on-primary-container font-label text-label-md">Proches</button>
+          <button type="button" role="tab" aria-selected="false" class="py-1.5 rounded-full bg-light-surface-container text-light-on-surface-variant font-label text-label-md">Tous</button>
+          <button type="button" role="tab" aria-selected="false" class="py-1.5 rounded-full bg-light-surface-container text-light-on-surface-variant font-label text-label-md">Favoris</button>
+        </div>
+      </header>
+
+      <main class="px-page-margin py-4 flex flex-col gap-3">
+        <article data-component-id="card-elevated" data-component-type="card" data-component-variant="elevated" class="bg-light-surface-container-lowest border border-light-outline-variant rounded-md p-3.5 flex items-center gap-3">
+          <span class="w-10 h-10 rounded-full bg-light-secondary-container text-light-primary flex items-center justify-center shrink-0">
+            <span class="material-symbols-outlined text-[20px]" style="font-variation-settings: &#39;FILL&#39; 1;" aria-hidden="true">location_on</span>
+          </span>
+          <div class="flex-1 min-w-0">
+            <h2 data-design-text-token="title-sm" class="font-headline text-title-sm text-light-on-surface">Commissariat Kintambo</h2>
+            <p data-design-text-token="body-sm" class="font-body text-body-sm text-light-on-surface-variant">Avenue de la Libération</p>
+            <span data-design-text-token="label-md" class="font-label text-label-md text-light-primary-container tabular-nums">0.8 km</span>
+          </div>
+          <span class="material-symbols-outlined text-light-on-surface-variant text-[20px]" aria-hidden="true">chevron_right</span>
+        </article>
+
+        <article data-component-id="card-elevated" data-component-type="card" data-component-variant="elevated" class="bg-light-surface-container-lowest border border-light-outline-variant rounded-md p-3.5 flex items-center gap-3">
+          <span class="w-10 h-10 rounded-full bg-light-secondary-container text-light-primary flex items-center justify-center shrink-0">
+            <span class="material-symbols-outlined text-[20px]" style="font-variation-settings: &#39;FILL&#39; 1;" aria-hidden="true">location_on</span>
+          </span>
+          <div class="flex-1 min-w-0">
+            <h2 data-design-text-token="title-sm" class="font-headline text-title-sm text-light-on-surface">Commissariat Limete</h2>
+            <p data-design-text-token="body-sm" class="font-body text-body-sm text-light-on-surface-variant">Boulevard Lumumba</p>
+          </div>
+          <span class="material-symbols-outlined text-light-on-surface-variant text-[20px]" aria-hidden="true">chevron_right</span>
+        </article>
+
+        <article data-component-id="card-elevated" data-component-type="card" data-component-variant="elevated" class="bg-light-surface-container-lowest border border-light-outline-variant rounded-md p-3.5 flex items-center gap-3">
+          <span class="w-10 h-10 rounded-full bg-light-secondary-container text-light-primary flex items-center justify-center shrink-0">
+            <span class="material-symbols-outlined text-[20px]" style="font-variation-settings: &#39;FILL&#39; 1;" aria-hidden="true">location_on</span>
+          </span>
+          <div class="flex-1 min-w-0">
+            <h2 data-design-text-token="title-sm" class="font-headline text-title-sm text-light-on-surface">Commissariat Gombe</h2>
+            <p data-design-text-token="body-sm" class="font-body text-body-sm text-light-on-surface-variant">Avenue Colonel Ebeya</p>
+          </div>
+          <span class="material-symbols-outlined text-light-on-surface-variant text-[20px]" aria-hidden="true">chevron_right</span>
+        </article>
+
+        <article data-component-id="card-elevated" data-component-type="card" data-component-variant="elevated" class="bg-light-surface-container-lowest border border-light-outline-variant rounded-md p-3.5 flex items-center gap-3">
+          <span class="w-10 h-10 rounded-full bg-light-secondary-container text-light-primary flex items-center justify-center shrink-0">
+            <span class="material-symbols-outlined text-[20px]" style="font-variation-settings: &#39;FILL&#39; 1;" aria-hidden="true">location_on</span>
+          </span>
+          <div class="flex-1 min-w-0">
+            <h2 data-design-text-token="title-sm" class="font-headline text-title-sm text-light-on-surface">Commissariat Masina</h2>
+            <p data-design-text-token="body-sm" class="font-body text-body-sm text-light-on-surface-variant">Avenue de l&#39;Équateur</p>
+          </div>
+          <span class="material-symbols-outlined text-light-on-surface-variant text-[20px]" aria-hidden="true">chevron_right</span>
+        </article>
+      </main>
+    </div>
+
+    <footer class="px-page-margin py-5">
+      <button data-component-id="button-primary" data-component-type="button" data-component-variant="primary" type="button" class="w-full min-h-[48px] px-6 py-3 rounded-md bg-light-primary-container text-light-on-primary-container font-headline hover:bg-light-primary transition-colors flex items-center justify-center" onclick="window.location.href=&#39;../07-carte-des-incidents/CarteDesIncidents.html&#39;">
+        <span data-design-text-token="label-lg" class="text-label-lg font-headline">Voir sur la carte</span>
+      </button>
+    </footer>
+  </div>
+
+
+</body></html>
